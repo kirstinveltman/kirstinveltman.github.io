@@ -1,0 +1,55 @@
+section {
+	padding-top: 32px;
+	margin-top: 32px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+#home {
+	background: url(../img/Ashland_Lithia.jpg) no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	padding-top: 450px; 
+	padding-bottom: 150px;
+	color: #fff;
+}
+
+.head-main {
+	text-shadow: 2px 4px 5px rgba(0,0,0,0.9);
+	font-variant: small-caps; 
+	color: #fff;
+	letter-spacing: 4pt;
+	word-spacing: 9pt;
+	font-size: 32px;
+	text-align: right;
+	font-family: sans-serif;
+	font-weight: 820;
+	padding: 10px;
+}
+
+.section-heading {
+	font-variant: small-caps; 
+	color: #000;
+	letter-spacing: 4pt;
+	word-spacing: 9pt;
+	font-size: 39px;
+	text-align: center;
+	font-family: sans-serif;
+	line-height: 2;
+	font-weight: 820;
+	padding: 10px;
+}
+
+/* To Do: add a little shadow on the section-heading letters */
+
