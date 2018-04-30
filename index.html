@@ -50,28 +50,34 @@
 					<br />
 					<div class="row text-center">
 						<div class="col">
-							<img src="./img/html-5.png" class="center-block" width="73" height="73" alt="Responsive image">
-							<p>HTML5</p>
+							<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="HTML5">
+								<img src="./img/html-5.png" class="center-block" width="73" height="73" alt="Responsive image">
+							</button>
 						</div>
 						<div class="col">
-							<img src="./img/css-3.png" class="center-block" width="73" height="73" alt="Responsive image">
-							<p>CSS3</p>
+							<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="CSS3">
+								<img src="./img/css-3.png" class="center-block" width="73" height="73" alt="Responsive image">
+							</button>
 						</div>
 						<div class="col">
-							<img src="./img/tux.png" class="center-block" width="73" height="73" alt="Responsive image">
-							<p>Linux - RHEL &amp; Ubuntu</p>
+							<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Linux - RHEL &amp; Ubuntu">
+								<img src="./img/tux.png" class="center-block" width="73" height="73" alt="Responsive image">
+							</button>
 						</div>
 						<div class="col">
-							<img src="./img/looping-arrows.png" class="center-block" width="73" height="73" alt="Responsive image">
-							<p>Agile</p>
+							<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Agile">
+								<img src="./img/looping-arrows.png" class="center-block" width="73" height="73" alt="Responsive image">
+							</button>
 						</div>
 						<div class="col">
-							<img src="./img/management-structure.png" class="center-block" width="73" height="73" alt="Responsive image">
-							<p>Management</p>
+							<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Management">
+								<img src="./img/management-structure.png" class="center-block" width="73" height="73" alt="Responsive image">
+							</button>
 						</div>
 						<div class="col">
-							<img src="./img/keyboard.png" class="center-block" width="73" height="73" alt="Responsive image">
-							<p>DevOps &amp; Systems Administration</p>
+							<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="DevOps &amp; Systems Administration">
+								<img src="./img/keyboard.png" class="center-block" width="73" height="73" alt="Responsive image">
+							</button>
 						</div>
 					</div>
 			</div>
@@ -144,13 +150,19 @@
 						<br />
 					</div>
 					<div class="col">
-						<a href="https://github.com/kirstinveltman" target="_blank"><img src="./img/github-2.png" class="center-block" width="50" height="50" alt="Responsive image"></a>
+						<button class="btn btn-link">
+							<a href="https://github.com/kirstinveltman" target="_blank"><img src="./img/github-2.png" class="center-block" width="50" height="50" alt="Responsive image"></a>
+						</button>
 					</div>
 					<div class="col">
-						<a href="https://www.linkedin.com/in/kirstinveltman/" target="_blank"><img src="./img/linkedin.png" class="center-block" width="50" height="50" alt="Responsive image"></a>
+						<button class="btn btn-link">
+							<a href="https://www.linkedin.com/in/kirstinveltman/" target="_blank"><img src="./img/linkedin.png" class="center-block" width="50" height="50" alt="Responsive image"></a>
+						</button>
 					</div>
 					<div class="col">
-						<a href="https://twitter.com/KirstinVeltman" target="_blank"><img src="./img/twitter-1.png" class="center-block" width="50" height="50" alt="Responsive image"></a>
+						<button class="btn btn-link">
+							<a href="https://twitter.com/KirstinVeltman" target="_blank"><img src="./img/twitter-1.png" class="center-block" width="50" height="50" alt="Responsive image"></a>
+						</button>
 					</div>
 					<div class="col">
 						<br />
@@ -198,5 +210,17 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  </body>
+
+	<script>
+	$('.popover-dismiss').popover({
+		trigger: 'focus'
+	});
+	
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	});
+	
+	</script>
+
+	</body>
 </html>
