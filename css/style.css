@@ -3,6 +3,27 @@ section {
 	margin-top: 32px;
 }
 
+.section-color1 {
+	margin-top: 0;
+	margin-bottom: 0;
+	background-color: #d4d2d1;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+}
+
+.section-color2 {
+	margin-top: 0;
+	margin-bottom: 0;
+	background-color: #edebe9;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 .text-center {
 	text-align: center;
 }
