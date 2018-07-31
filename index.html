@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./js/style.js">
   </head>
   <body>
 	
@@ -243,17 +244,17 @@
 					</div>
 					<div class="col">
 						<button class="btn btn-link">
-							<a href="https://github.com/kirstinveltman" target="_blank"><img src="./img/contact/github_circle_color.png" class="center-block" width="50" height="50" alt="Responsive image"></a>
+							<a href="https://github.com/kirstinveltman" target="_blank"><img id="github" src="./img/contact/github_circle_color.png" class="center-block" width="50" height="50" alt="Responsive image"></a>
 						</button>
 					</div>
 					<div class="col">
 						<button class="btn btn-link">
-							<a href="https://www.linkedin.com/in/kirstinveltman/" target="_blank"><img src="./img/contact/linkedin_circle_color.png" class="center-block" width="50" height="50" alt="Responsive image"></a>
+							<a href="https://www.linkedin.com/in/kirstinveltman/" target="_blank"><img id="linkedin" src="./img/contact/linkedin_circle_color.png" class="center-block" width="50" height="50" alt="Responsive image"></a>
 						</button>
 					</div>
 					<div class="col">
 						<button class="btn btn-link">
-							<a href="https://twitter.com/KirstinVeltman" target="_blank"><img src="./img/contact/twitter_circle_color.png" class="center-block" width="50" height="50" alt="Responsive image"></a>
+							<a href="https://twitter.com/KirstinVeltman" target="_blank"><img id="twitter" src="./img/contact/twitter_circle_color.png" class="center-block" width="50" height="50" alt="Responsive image"></a>
 						</button>
 					</div>
 					<div class="col">
@@ -299,6 +300,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
+	<script src="./js/style.js"></script>
 	<script>
 	$('.popover-dismiss').popover({
 		trigger: 'focus'
@@ -308,7 +310,41 @@
 		$('[data-toggle="tooltip"]').tooltip()
 	});
 	
+	$(function(){
+		$("#github").on({
+		mouseenter: function(){
+		$(this).attr('src','./img/contact/github_circle_gray.png');
+		},
+		mouseleave: function(){
+		$(this).attr('src','./img/contact/github_circle_color.png');
+		}
+		});
+  
+		});
+	$(function(){
+		$("#linkedin").on({
+		mouseenter: function(){
+		$(this).attr('src','./img/contact/linkedin_circle_gray.png');
+		},
+		mouseleave: function(){
+		$(this).attr('src','./img/contact/linkedin_circle_color.png');
+		}
+		});
+  
+		});
+	$(function(){
+		$("#twitter").on({
+		mouseenter: function(){
+		$(this).attr('src','./img/contact/twitter_circle_gray.png');
+		},
+		mouseleave: function(){
+		$(this).attr('src','./img/contact/twitter_circle_color.png');
+		}
+		});
+  
+		});
 	</script>
-
+	
+	
 	</body>
 </html>
