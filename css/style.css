@@ -47,6 +47,19 @@ section {
 	color: #fff;
 }
 
+.head-name {
+	text-shadow: 2px 4px 5px #7c50ab;
+	font-variant: small-caps; 
+	color: #fff;
+	letter-spacing: 4pt;
+	word-spacing: 9pt;
+	font-size: 50px;
+	text-align: right;
+	font-family: sans-serif;
+	font-weight: 820;
+	padding: 10px;
+}
+
 .head-main {
 	text-shadow: 2px 4px 5px #7c50ab;
 	font-variant: small-caps; 
